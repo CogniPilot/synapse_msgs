@@ -61,7 +61,8 @@ std_msgs/Header header
 uint8 arming
 uint8 joy
 uint8 fuel
-uint8 command_source
+uint8 joy_source
+uint8 topic_source
 uint16 mode
 uint8 safety
 uint8 synapse
