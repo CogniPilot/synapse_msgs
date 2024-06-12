@@ -8,13 +8,13 @@ uint8 FUEL_LOW = 2
 uint8 FUEL_NOMINAL = 3
 uint8 FUEL_OVER_CAPACITY = 4
 
-uint8 JOY_UNKNOWN = 0
-uint8 JOY_DISABLED = 1
-uint8 JOY_LOSS = 2
-uint8 JOY_NOMINAL = 3
+uint8 STATUS_UNKNOWN = 0
+uint8 STATUS_DISABLED = 1
+uint8 STATUS_LOSS = 2
+uint8 STATUS_NOMINAL = 3
 
 uint8 TOPIC_SOURCE_UNKNOWN = 0
-uint8 TOPIC_SOURCE_JOY = 1
+uint8 TOPIC_SOURCE_INPUT = 1
 uint8 TOPIC_SOURCE_LOCAL = 2
 uint8 TOPIC_SOURCE_ETHERNET = 3
 uint8 TOPIC_SOURCE_CAN = 4
@@ -22,14 +22,14 @@ uint8 TOPIC_SOURCE_RESERVED_0 = 5
 uint8 TOPIC_SOURCE_RESERVED_1 = 6
 uint8 TOPIC_SOURCE_RESERVED_2 = 7
 
-uint8 JOY_SOURCE_UNKNOWN = 0
-uint8 JOY_SOURCE_RADIO_CONTROL = 1
-uint8 JOY_SOURCE_ETHERNET = 2
-uint8 JOY_SOURCE_CAN = 3
-uint8 JOY_SOURCE_RESERVED_0 = 4
-uint8 JOY_SOURCE_RESERVED_1 = 5
-uint8 JOY_SOURCE_RESERVED_2 = 6
-uint8 JOY_SOURCE_RESERVED_3 = 7
+uint8 INPUT_SOURCE_UNKNOWN = 0
+uint8 INPUT_SOURCE_RADIO_CONTROL = 1
+uint8 INPUT_SOURCE_ETHERNET = 2
+uint8 INPUT_SOURCE_CAN = 3
+uint8 INPUT_SOURCE_RESERVED_0 = 4
+uint8 INPUT_SOURCE_RESERVED_1 = 5
+uint8 INPUT_SOURCE_RESERVED_2 = 6
+uint8 INPUT_SOURCE_RESERVED_3 = 7
 
 uint8 MODE_UNKNOWN = 0
 uint8 MODE_CALIBRATION = 1
@@ -52,21 +52,17 @@ uint8 SAFETY_UNKNOWN = 0
 uint8 SAFETY_SAFE = 1
 uint8 SAFETY_UNSAFE = 2
 
-uint8 SYNAPSE_UNKNOWN = 0
-uint8 SYNAPSE_DISABLED = 1
-uint8 SYNAPSE_LOSS = 2
-uint8 SYNAPSE_NOMINAL = 3
-
 std_msgs/Header header
 uint8 arming
-uint8 joy
-uint8 fuel
-uint8 joy_source
+string status_message
+uint8 input_status
+uint8 input_source
+uint8 topic_status
 uint8 topic_source
+uint8 electrode_status
 uint16 mode
 uint8 safety
-uint8 synapse
-string status_message
+uint8 fuel
 uint8 fuel_percentage
 float32 power
 uint32 request_seq
