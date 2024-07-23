@@ -1,5 +1,5 @@
 std_msgs/Header header
 
-uint64 time_start
+builtin_interfaces/Time time_start
 
 BezierCurve[] curves
