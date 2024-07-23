@@ -1,4 +1,4 @@
-uint64 time_stop
+builtin_interfaces/Time time_stop
 
 float64[] x
 float64[] y
