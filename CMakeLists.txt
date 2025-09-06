@@ -11,9 +11,11 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
+  "msg/Time.msg"
   "msg/BezierCurve.msg"
   "msg/BezierTrajectory.msg"
   "msg/Input.msg"
+  "msg/Imu.msg"
   "msg/Status.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
