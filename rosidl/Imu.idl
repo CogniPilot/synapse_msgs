@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from synapse_msgs/msg/Imu.msg
+// generated code does not contain a copyright notice
+
+#include "synapse_msgs/msg/Time.idl"
+
+module synapse_msgs {
+  module msg {
+    struct Imu {
+      synapse_msgs::msg::Time stamp;
+
+      float x;
+
+      float y;
+
+      float z;
+    };
+  };
+};

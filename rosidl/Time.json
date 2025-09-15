@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "synapse_msgs/msg/Time",
+      "fields": [
+        {
+          "name": "sec",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "nanosec",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "synapse_msgs/msg/Time",
+      "hash_string": "RIHS01_29f3827f8a258e1c631b66f0f1636d35e9bc534de42649373f973cf8131eb959"
+    }
+  ]
+}

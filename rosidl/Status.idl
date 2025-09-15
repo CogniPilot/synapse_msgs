@@ -1,0 +1,124 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from synapse_msgs/msg/Status.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module synapse_msgs {
+  module msg {
+    module Status_Constants {
+      const uint8 ARMING_UNKNOWN = 0;
+      const uint8 ARMING_DISARMED = 1;
+      const uint8 ARMING_ARMED = 2;
+      const uint8 FUEL_UNKNOWN = 0;
+      const uint8 FUEL_CRITICAL = 1;
+      const uint8 FUEL_LOW = 2;
+      const uint8 FUEL_NOMINAL = 3;
+      const uint8 FUEL_OVER_CAPACITY = 4;
+      const uint8 STATUS_UNKNOWN = 0;
+      const uint8 STATUS_DISABLED = 1;
+      const uint8 STATUS_LOSS = 2;
+      const uint8 STATUS_NOMINAL = 3;
+      const uint8 TOPIC_SOURCE_UNKNOWN = 0;
+      const uint8 TOPIC_SOURCE_INPUT = 1;
+      const uint8 TOPIC_SOURCE_LOCAL = 2;
+      const uint8 TOPIC_SOURCE_ETHERNET = 3;
+      const uint8 TOPIC_SOURCE_CAN = 4;
+      const uint8 TOPIC_SOURCE_RESERVED_0 = 5;
+      const uint8 TOPIC_SOURCE_RESERVED_1 = 6;
+      const uint8 TOPIC_SOURCE_RESERVED_2 = 7;
+      const uint8 INPUT_SOURCE_UNKNOWN = 0;
+      const uint8 INPUT_SOURCE_RADIO_CONTROL = 1;
+      const uint8 INPUT_SOURCE_ETHERNET = 2;
+      const uint8 INPUT_SOURCE_CAN = 3;
+      const uint8 INPUT_SOURCE_RESERVED_0 = 4;
+      const uint8 INPUT_SOURCE_RESERVED_1 = 5;
+      const uint8 INPUT_SOURCE_RESERVED_2 = 6;
+      const uint8 INPUT_SOURCE_RESERVED_3 = 7;
+      const uint8 MODE_UNKNOWN = 0;
+      const uint8 MODE_CALIBRATION = 1;
+      const uint8 MODE_ACTUATORS = 2;
+      const uint8 MODE_ATTITUDE_RATE = 3;
+      const uint8 MODE_ATTITUDE = 4;
+      const uint8 MODE_ALTITUDE = 5;
+      const uint8 MODE_POSITION = 6;
+      const uint8 MODE_VELOCITY = 7;
+      const uint8 MODE_ACCELERATION = 8;
+      const uint8 MODE_BEZIER = 9;
+      const uint8 MODE_RESERVED_0 = 10;
+      const uint8 MODE_RESERVED_1 = 11;
+      const uint8 MODE_RESERVED_2 = 12;
+      const uint8 MODE_RESERVED_3 = 13;
+      const uint8 MODE_RESERVED_4 = 14;
+      const uint8 MODE_RESERVED_5 = 15;
+      const uint8 SAFETY_UNKNOWN = 0;
+      const uint8 SAFETY_SAFE = 1;
+      const uint8 SAFETY_UNSAFE = 2;
+      const uint32 FLAG_NONE = 0;
+      const uint32 FLAG_LIGHTING = 1;
+      const uint32 FLAG_RESERVED_0 = 2;
+      const uint32 FLAG_RESERVED_1 = 4;
+      const uint32 FLAG_RESERVED_2 = 8;
+      const uint32 FLAG_RESERVED_3 = 16;
+      const uint32 FLAG_RESERVED_4 = 32;
+      const uint32 FLAG_RESERVED_5 = 64;
+      const uint32 FLAG_RESERVED_6 = 128;
+      const uint32 FLAG_RESERVED_7 = 256;
+      const uint32 FLAG_RESERVED_8 = 512;
+      const uint32 FLAG_RESERVED_9 = 1024;
+      const uint32 FLAG_RESERVED_10 = 2048;
+      const uint32 FLAG_RESERVED_11 = 4096;
+      const uint32 FLAG_RESERVED_12 = 8192;
+      const uint32 FLAG_RESERVED_13 = 16384;
+      const uint32 FLAG_RESERVED_14 = 32768;
+      const uint32 FLAG_RESERVED_15 = 65536;
+      const uint32 FLAG_RESERVED_16 = 131072;
+      const uint32 FLAG_RESERVED_17 = 262144;
+      const uint32 FLAG_RESERVED_18 = 524288;
+      const uint32 FLAG_RESERVED_19 = 1048576;
+      const uint32 FLAG_RESERVED_20 = 2097152;
+      const uint32 FLAG_RESERVED_21 = 4194304;
+      const uint32 FLAG_RESERVED_22 = 8388608;
+      const uint32 FLAG_RESERVED_23 = 16777216;
+      const uint32 FLAG_RESERVED_24 = 33554432;
+      const uint32 FLAG_RESERVED_25 = 67108864;
+      const uint32 FLAG_RESERVED_26 = 134217728;
+      const uint32 FLAG_RESERVED_27 = 268435456;
+      const uint32 FLAG_RESERVED_28 = 536870912;
+      const uint32 FLAG_RESERVED_29 = 1073741824;
+    };
+    struct Status {
+      std_msgs::msg::Header header;
+
+      uint8 arming;
+
+      string status_message;
+
+      uint8 input_status;
+
+      uint8 input_source;
+
+      uint8 topic_status;
+
+      uint8 topic_source;
+
+      uint8 electrode_status;
+
+      uint16 mode;
+
+      uint8 safety;
+
+      uint8 fuel;
+
+      uint8 fuel_percentage;
+
+      float power;
+
+      uint32 request_seq;
+
+      boolean request_rejected;
+
+      uint32 flag;
+    };
+  };
+};
