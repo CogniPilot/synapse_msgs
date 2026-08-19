@@ -1,0 +1,9 @@
+uint64 timestamp_ns
+float32[2] velocity_flu_m_s
+float32 distance_m
+float32 roll_rad
+float32 pitch_rad
+uint8 quality
+uint8 flags
+uint8 time_status
+uint8 id

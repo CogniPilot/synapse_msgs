@@ -1,0 +1,15 @@
+uint32 health_prefix_magic
+uint16 health_prefix_version
+uint16 health_prefix_length
+uint16 active_wire_protocol_version
+uint16 prefix_flags
+uint32 source_node_id
+uint64 source_session_id
+uint64 uptime_ns
+uint32 health_sequence
+uint8 readiness
+uint8 release_profile
+uint16 mismatch_reason
+uint8[32] active_core_compatibility_id
+uint8[32] expected_core_compatibility_id
+uint8[32] fleet_contract_id
